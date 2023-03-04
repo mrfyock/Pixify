@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+ #home{
+    color:#7BFFE9;
+    font-weight: thin;
+ }
+.navbar{
+    height: 50px;
+    grid-area: navbar;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2A3B49;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px;
+
+}
+.dark-mode{
+    background-color: #2A3B49;
+    color: white;
+}
+#darkmode{
+    background: transparent;
+    border: none;
+    color: white;
+}
+.main{
+    min-height: 100%;
+    justify-content: center;
+    display: grid;
+    column-gap: 10px;
+    grid-template: auto 2fr 2fr 2fr / 1fr 2fr 2fr 100px 2fr;
+    grid-template-areas:
+    ". header header  . submit"
+    ". photo1 photo2  . submit"
+    ". photo3 photo4  . submit"
+    ". photo5 photo6 . ."    
+}
+/* .main{
+    min-height: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template: auto 2fr 2fr 2fr / 2fr 2fr 1fr 1fr;
+    grid-template-areas:
+    " header header  . submit"
+    " photo1 photo2  . submit"
+    " photo3 photo4  . submit"
+    " photo5 photo6 . ."    
+} */
+.cardDetails{
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    font-size: 18px;
+    width: 450px;
+      
+}
+
+.submission-bar{
+    grid-area: submit;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: 200px;
+    align-content: center;
+    justify-content: center;
+    height: 550px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: #2A3B49;
+    color: white;
+    text-align: center;
+}
+#formTitle{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+#submit-button{
+    height: 50px;
+    width: 150px;
+    background: transparent;
+    color: #7BFFE9;
+    border-radius: 90px;
+    font-size: 18px;
+    border: 2px solid #7BFFE9;
+    margin-top: 25px;
+}
+input{
+    padding: 10px; /*innerspacings*/
+    margin: 10px 40px 10px 40px;
+    width: 300px;
+}
+
+.photo-header{
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+    font-size: 24px;
+    margin-bottom: 35px;
+    /* background-color: pink; */
+}
+#card-1{
+    grid-area: photo1;
+}
+#card-2{
+    grid-area: photo2;
+}
+#card-3{
+    grid-area: photo3;
+}
+#card-4{grid-area: photo4;}
+#card-5{grid-area: photo5;}
+#card-6{grid-area: photo6;}
+
+.cardimg{
+    height: 225px;
+    width: 450px;
+    border-radius: 15px;
+}
+
+.prev-btn, .next-btn{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    color: #7BFFE9;
+    height: 50px;
+    margin: 0 10px 0 10px;
+    align-items: center;
+    height: 50px;
+    width: 175px;
+    border-radius: 90px;
+    font-size: 24px;
+    border: 2px solid #7BFFE9;
+    background-color: #2A3B49;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    flex-direction: row-reverse;
+    
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.artist{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: lighter;
+}
+#gallery{
+    display: none;
+    width: 1150px;
+    height: 600px;
+    margin-top: 25px;
+}
+#galleryDiv{
+    display: flex;
+    justify-content: center;
+}
+.viewGalleryBtn{
+    background-color: transparent;
+    border: none;
+    font-size: small;
+}
+
+.counterElement{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.error{
+  border: 2px solid red;
+  border-radius: 5px;
+}

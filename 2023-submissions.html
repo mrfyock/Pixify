@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 Submissions</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div>
+            <h1><a href ="/index.html" id="home">Pixify</a></h1>
+            </div>
+            <div>
+            <a href="2023-submissions.html" class="nav-link">2023 Submissions</a>
+            <a href="About.html" class="nav-link">About</a>
+            <button id="darkmode" onclick="darkMode()">Dark Mode</button>
+            </div>
+        </div>
+        <div class="galleryContainer">
+        <div class="title"> 
+            <h1 id="galleryTitle"></h1>
+        </div>
+        <div>
+            <h2 id="galleryArtist"></h2>
+        </div>
+        <div id="galleryDiv">
+            <img src="" id="gallery">
+        </div>
+        <div class="counterElement">
+            <p id="counter"></p>
+        </div>
+        <div class="buttons">
+           
+        </div>
+        </div>
+        <div class="main">
+            <div class="photo-header">
+                <h2>2023 Submissions</h2>
+            </div>
+            <!-- <div class="photo-column"> -->
+                <div id="card-1" class="cards">
+                    <img id="card1img" src="" class="cardimg">
+                    <div class="cardDetails">
+                        <p id="oneTitleArtist"></p>
+                    <div>
+                        <p class="viewGalleryBtn" id="viewGalleryOneBtn" onclick="changeViewGalleryOne()"></p>
+                    </div>
+                    </div>
+                </div>
+            
+            <div id="card-2" class="cards">
+                <img id="card2img" src="" class="cardimg" onclick="viewGalleryTwo()">
+                <div class="cardDetails">
+                    <p id="twoTitleArtist"></p>
+                <div>
+                    <p class="viewGalleryBtn" id="viewGalleryTwoBtn" onclick="viewGalleryTwo()"></p>
+                </div>
+                </div>
+            </div>
+            <div id="card-3" class="cards">
+                <img id="card3img" src="" class="cardimg" onclick="viewGalleryThree()">
+                <div class="cardDetails">
+                    <p id="threeTitleArtist"></p>
+                <div>
+                    <p class="viewGalleryBtn" id="viewGalleryThreeBtn" onclick="viewGalleryThree()"></p>
+                </div>
+                </div>
+            </div>
+            <div id="card-4" class="cards">
+                <img id="card4img" src="" class="cardimg" onclick="viewGalleryFour()">
+                <div class="cardDetails">
+                    <p id="fourTitleArtist"></p>
+                <div>
+                    <p class="viewGalleryBtn" id="viewGalleryFourBtn" onclick="viewGalleryFour()"></p>
+                </div>
+                </div>
+            </div>
+            <div id="card-5" class="cards">
+                <img id="card5img" src="" class="cardimg" onclick="viewGalleryFive()">
+                <div class="cardDetails">
+                    <p id="fiveTitleArtist"></p>
+                <div>
+                    <p class="viewGalleryBtn" id="viewGalleryFiveBtn" onclick="viewGalleryFive()"></p>
+                </div>
+                </div>
+            </div>
+            <div id="card-6" class="cards">
+                <img id="card6img" src="" class="cardimg" onclick="viewGallerySix()">
+                <div class="cardDetails">
+                    <p id="sixTitleArtist"></p>
+                <div>
+                    <p class="viewGalleryBtn" id="viewGallerySixBtn" onclick="viewGallerySix()"></p>
+            </div>
+            </div>
+        </div>
+        <!-- </div> -->
+            <div class="submission-bar">
+                <form class="submission-form">
+                <p id="formTitle">SUBMIT YOUR WORK</p>
+                  <input type="text" placeholder="Your Name" id="name" class="userEntry">
+                  <input type="text" placeholder="Title of Your Entry" id="entryTitle" class="userEntry">
+                  <input type="text" placeholder="Image Url One" id="entry1">
+                  <input type="text" placeholder="Image Url Two" id="entry2" class="userEntry">
+                  <input type="text" placeholder="Image Url Three" id="entry3" class="userEntry">
+                  <input type="text" placeholder="Image Url Four" id="entry4" class="userEntry">
+                  <input type="text" placeholder="Image Url Five" id="entry5" class="userEntry">
+                  <button id="submit-button">Submit</button>  
+                </form>
+            </div>
+
+
+
+        </div>
+     
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
